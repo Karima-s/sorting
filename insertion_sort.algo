@@ -1,0 +1,15 @@
+PROCEDURE insertionSort(var arr : ARRAY_OF INTEGER):
+VAR
+    arr:=array_name : ARRAY_OF INTEGER[100];
+    key, i,j:= INTEGER;
+BEGIN
+    FOR i FROM 1 TO arr.lenght STEP 1  DO
+      key = arr[i]
+      j = i-1
+      while j >= 0 and key < arr[j] :
+                arr[j + 1] = arr[j]
+                j -= 1
+      arr[j + 1] = key
+    END_FOR
+    return 
+END
